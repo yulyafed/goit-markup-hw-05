@@ -624,6 +624,7 @@ color: #FFFFFF;
   pointer-events: none;
   visibility: hidden;
 }
+
 /*---------------hero portfolio-------------------*/
 .portfolio-btn-list{
   display: flex;
