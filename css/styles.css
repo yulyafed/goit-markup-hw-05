@@ -460,6 +460,7 @@ color: var(--bottom-text-color);
   margin-left: 30px;
 }
 .clients-link{
+  outline: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,8 +571,6 @@ color: #FFFFFF;
   align-items: center;
 
   background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color var(--duration) var(--time-function);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus{
@@ -579,8 +578,6 @@ color: #FFFFFF;
 }
 .footer-soc-icon{
   fill: #FFFFFF;
-
-  transition: fill var(--duration) var(--time-function);
 }
 
 /* ------------modal----------------- */
@@ -687,7 +684,8 @@ transition: background-color var(--duration) var(--time-function),color var(--du
   margin-top: 30px;
   cursor: pointer;
 }
-.portfolio-link:hover{
+.portfolio-link:hover,
+.portfolio-link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .overlay{
@@ -710,7 +708,8 @@ background-color: rgba(33, 150, 243, 0.9);
 transform: translateY(100%) scale(0,0);
 transition: transform var(--duration) var(--time-function);
 }
-.portfolio-link:hover .overlay-text{
+.portfolio-link:hover .overlay-text,
+.portfolio-link:focus .overlay-text{
   transform: translateY(0%) scale(1,1);
 }
 .portfolio-content{
